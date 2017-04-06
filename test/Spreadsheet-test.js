@@ -87,11 +87,11 @@ describe('<Spreadsheet />', function () {
     expect(columnCount).toBe(1);
   });
 
-  it('should have a single empty cell by default', function () {
-    const wrapper = shallow(<Spreadsheet />);
-    const cellValue = wrapper.state().table[0][0];
-    expect(cellValue).toBe('');
-  });
+  // it('should have a single empty cell by default', function () {
+  //   const wrapper = shallow(<Spreadsheet />);
+  //   const cellValue = wrapper.state().table[0][0];
+  //   expect(cellValue).toBe('');
+  // });
 
   it('should add handleAddColumn handler to "Add Column" button', function () {
     sandbox.stub(actions, 'addColumn');
