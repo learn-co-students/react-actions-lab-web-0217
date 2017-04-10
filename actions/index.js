@@ -21,7 +21,7 @@ function removeRow (ev) {
 function removeColumn (ev) {
 }
 
-module.exports = {
+export default {
   addColumn,
   addRow,
   changeCell,
